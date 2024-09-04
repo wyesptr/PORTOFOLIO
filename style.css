@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poopins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0f1629;
+}
+
+p{
+    color: #fff;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    line-height: 40px;
+    font-size: 50px;
+    color: #fff;
+    transition: .45s;
+    display: none;
+}
+.scrollTop:hover{
+    color: #b9b9b9;
+}
+/* .loader{
+    display: flex;
+    align-items: flex-end;
+    transform: translateY(-35px);
+}
+.loader span{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    height: calc(20px * var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation:  animate .7s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+    0%{
+        background: #fff;
+        filter: blur(2px);
+        box-shadow: 0 0 10px #00b3ff,
+                    0 0 50px #00b3ff,
+                    0 0 100px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+    25%,75%{
+        background: #111;
+        filter: blur(0px);
+        box-shadow: none;
+    }
+    100%{
+        background: #fff;
+        filter: blur(2px);
+        box-shadow: 0 0 10px #00b3ff,
+                    0 0 50px #00b3ff,
+                    0 0 100px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+}
+
+.loader span i{
+    display: block;
+    font-style: normal;
+    color: #fff;
+    font-weight: bold;
+    transform: translateY(70px);
+    animation:  animate2 .7s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate2{
+    0%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 50px #00b3ff,
+                    0 0 100px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+    25%,75%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+    100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 50px #00b3ff,
+                    0 0 100px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+} */
+
+.navbar{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0f1629;
+}
+.logoname{
+    color: #3c9796;
+    font-size: 17px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+}
+.menu a{
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+
+.main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 280px 0 175px;
+    /* margin-bottom: 20vh; */
+}
+.textbox h3{
+    font-size: 20px;
+    color: #3c9796;
+}
+.textbox h1{
+    font-size: 50px;
+    color: #fff;
+}
+.textbox h4{
+    color: #fff;
+    font-size: 25px;
+}
+.textbox h4 span{
+    color: #61697b;
+}
+.textbox h5{
+    width: 500px;
+    height: auto;
+    font-size: 17px;
+    color: #61697b;
+}
+.ctMain{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #3c9796;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.ctMain:hover{
+    background-color: #fff;
+    color: #3c9796;
+}
+.picture{
+    width: 300px;
+    height: 300px;
+}
+.picture img{
+    width: 375px;
+    height: 375px;
+    filter: brightness(80%) saturate(200%);
+    clip-path: circle(50% at center);
+}
+
+
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 170px
+}
+.about h2{
+    color: #3c9796;
+}
+
+
+
+.project{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 170px;
+}
+.project h2{
+    color: #3c9796;
+}
+.cardMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cardFill{
+    width: 155vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: 0 20px;
+    border: 2px solid #3c9796;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .40s;
+    opacity: .7;
+}
+.card img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .3;
+}
+.card:hover{
+    transform: scale(1.05);
+    opacity: 1;
+    border: 2px solid #fff;
+}
+.cardText{
+    padding: 30px;
+}
+.cardText h4{
+    color: #3c9796;
+}
+.cardText a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3c9796;
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin: 20px 0 0 80px;
+    transition: .75s;
+}
+.cardText a:hover{
+    color: #3c9796;
+    background-color: #fff;
+}
+
+
+
+.skill{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 170px;
+    background-color: #3c9796;
+}
+.skill h2{
+    color: #0f1629;
+}
+.cardBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sCard{
+    width: 320px;
+    height: 450px;
+    border: 1px solid #0f1629;
+    background-color: #0f1629;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: .45s;
+}
+.sCard:hover{
+    transform: scale(1.02);
+}
+.ht i{
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.ht span{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.sFill i{
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.icon-cplusplus:before {
+    content: "\e900";
+    color: #00599c;
+    font-size: 20px;
+}
+.sFill ul{
+    padding-left: 20px;
+    list-style-type: disclosure-closed;
+    color: #fff;
+}
+
+
+
+.service{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 170px;
+}
+.service h2{
+    color: #3c9796;
+}
+.service i{
+    font-size: 40px;
+    padding: 10px;
+}
+.boxCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.svCard{
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(255,255,255,.2),
+                5px 5px 5px 5px rgba(0,0,0,.2);
+    transition: .4s;
+    cursor: pointer;
+}
+.svCard:hover{
+    transform: scale(1.02);
+    filter: brightness(120%) saturate(200%);
+    opacity: .7;
+}
+.svCard img{
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    bottom: 0;
+    left: -2px;
+    filter: blur(2px);
+    opacity: .2;
+    /* background-color: rgba(60, 151, 149, .4); */
+}
+.hc{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fc{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 30px 20px;
+    bottom: 0;
+    background-color: #3c9796;
+}
+
+
+
+.contact{
+    width: 100%;
+    min-height: 30vh;
+    padding: 50px;
+    background-color: #3c9796;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h2{
+    color: #fff;
+    margin: 0 20px;
+}
+.contact ul{
+    display: flex;
+    flex-direction: row;
+}
+.contact li{
+    list-style: none;
+    margin: 10px 40px;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    transition: .4s;
+}
+.contact a:hover{
+    color: #0f1629;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
